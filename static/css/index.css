@@ -1,0 +1,21 @@
+body {
+    background-image: url('/img/back.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+h2 {
+    font-size: 60px;
+    font-weight: 80;
+}
+
+.container {
+    padding-top: 120px;
+}
+
+.card {
+    padding: 20px;
+    background-color: #efdbd478;
+}

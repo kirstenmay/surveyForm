@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/index.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <title>Display Results</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="card w-50">
+                <div class="card-body">
+                    <h2 class="card-title">
+                        <%= ninja.name %>
+                    </h2>
+                    <p class="card-text">Dojo:
+                        <%= ninja.dojo %>
+                    </p>
+                    <p class="card-text">Favorite Language:
+                        <%= ninja.language %>
+                    </p>
+                    <p class="card-text">Comment:
+                        <%= ninja.comment %>
+                    </p>
+                    <a href="/" class="btn btn-outline-dark">Go Back</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

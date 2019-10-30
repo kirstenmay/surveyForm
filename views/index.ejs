@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/index.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <title>Survey Form</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="card w-50">
+                <div class="card-body">
+                    <form action="/result" method="post">
+                        <div class="form-group row">
+                            <label for="name" class="col-sm-3 col-form-label">Name</label>
+                            <div class="col-sm-9">
+                                <input name="name" type="text" class="form-control" placeholder="Your Name">
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="dojo" class="col-sm-3 col-form-label">Location</label>
+                            <div class="col-sm-9">
+                                <select class="form-control" name="dojo">
+                                    <option disabled selected value="">Select...</option>
+                                    <option value="Seattle, WA">Seattle, WA</option>
+                                    <option value="Los Angeles, CA">Los Angeles</option>
+                                    <option value="Berkeley, CA">Berkeley, CA</option>
+                                    <option value="Orange County, CA">Orange County, CA</option>
+                                    <option value="Silicon Valley, CA">Silicon Valley, CA</option>
+                                    <option value="Arlington, VA">Arlington, VA</option>
+                                    <option value="Boise, ID">Boise, ID</option>
+                                    <option value="Dallas, TX">Dallas, TX</option>
+                                    <option value="Tulsa, OK">Tulsa, OK</option>
+                                    <option value="Online">Online</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="language" class="col-sm-3 col-form-label">Language</label>
+                            <div class="col-sm-9">
+                                <select class="form-control" name="language">
+                                    <option disabled selected value="">Select...</option>
+                                    <option value="Python">Python</option>
+                                    <option value="C#">C#</option>
+                                    <option value="Java">Java</option>
+                                    <option value="Ruby">Ruby</option>
+                                    <option value="PHP">PHP</option>
+                                    <option value="IOS">IOS</option>
+                                    <option value="AJAX">AJAX</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="comment">Comment (optional)</label>
+                            <textarea name="comment" rows="4" class="form-control"></textarea>
+                        </div>
+                        <input type="submit" class="btn btn-outline-light" value="Submit" id="color">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
